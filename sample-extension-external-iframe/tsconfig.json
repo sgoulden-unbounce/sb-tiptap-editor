@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "lib": ["es2017", "dom"],
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "ES6",
+    "jsx": "react",
+    "allowJs": true,
+    "noEmitOnError": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "baseUrl": "./",
+    "paths": {
+      "config/*": ["config/*"],
+      "ub-shared": ["config/global-dependencies/ub-shared.ts"],
+      "smart-builder-components": ["config/global-dependencies/smart-builder-components.ts"]
+    },
+    "typeRoots": ["./node_modules/@types"],
+    "declaration": false,
+    "resolveJsonModule": true,
+    "keyofStringsOnly": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "moduleResolution": "node"
+  },
+  "include": ["./src/**/*", "./config/**/*", "manifest.ts"],
+  "exclude": ["node_modules"]
+}
